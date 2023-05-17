@@ -8,7 +8,7 @@ pipeline
 	stages{
 		stage('Code Checkout'){
 			steps{
-				git branch: 'main', url: 'https://github.com/Devops9AM/Docker-Web-App.git'
+				git branch: 'main', url: 'https://github.com/Devops9AM/CI-CD-using-Docker.git'
 
 			}
 		}
