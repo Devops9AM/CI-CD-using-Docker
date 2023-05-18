@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+  - name: creating afile
+    file:
+      path: /opt/test-file-by-ansible
+      state: touch 
+      

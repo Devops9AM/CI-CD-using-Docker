@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+  - name: creating files 
+    file:
+      path: /opt/cloudgen2/{{ item }}
+      state: touch
+    with_items:
+    - cat
+    - mat
+    - rat
+    - bat
+    - nat
+      

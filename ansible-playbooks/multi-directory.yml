@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+  - name: createadirectory
+    file:
+      path: /opt/{{item}}
+      state: directory
+    with_items:
+      - Cloud-Gen
+      - CloudGen 
+      - Cloud-DevOps
+      - Cloud-Ops 
+
+
