@@ -43,6 +43,12 @@ pipeline
             }
           }
           
+	  	stage('mailing the status on this job'){
+			steps{
+			    mail bcc: '', body: '''Hi We are from Project Build Team. Pls have a look on this project output.
+''', cc: '', from: '', replyTo: '', subject: 'Jenkins Pipeline Job Execution', to: 'cloudgen0323@gmail.com'
+}
+}
         }
       }
 
